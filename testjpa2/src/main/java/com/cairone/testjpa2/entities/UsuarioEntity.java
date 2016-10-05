@@ -12,8 +12,8 @@ public class UsuarioEntity implements Serializable {
 	private UsuarioEntityPK id;
 	
 	@OneToOne @MapsId("personaRelPKEntity") @JoinColumns({
-		@JoinColumn(name = "per_tipo_usu", referencedColumnName = "per_tipo", insertable = false, updatable = false),
-		@JoinColumn(name = "per_cod_usu", referencedColumnName = "per_cod", insertable = false, updatable = false)
+		@JoinColumn(name = "per_tipo_usu", referencedColumnName = "per_tipo"),
+		@JoinColumn(name = "per_cod_usu", referencedColumnName = "per_cod")
 	})
 	private PersonaRelEntity personaRelEntity = null;
 

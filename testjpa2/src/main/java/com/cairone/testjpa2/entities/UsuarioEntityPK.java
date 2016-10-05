@@ -10,10 +10,10 @@ public class UsuarioEntityPK implements Serializable {
 
 	private PersonaRelPKEntity personaRelPKEntity = null;
 	
-	@Column(name="per_tipo_usu", insertable=false, updatable=false)
+	@Transient
 	private Integer perTipoUsu;
 
-	@Column(name="per_cod_usu", insertable=false, updatable=false)
+	@Transient
 	private Integer perCodUsu;
 
 	public UsuarioEntityPK() {
